@@ -20,14 +20,14 @@ namespace LLarean.IMG2ETC2
                 throw new ArgumentNullException(nameof(_folderPath));
             }
 
-            if (Directory.Exists(_folderPath) == false)
-            {
-                throw new DirectoryNotFoundException($"Folder not found: {_folderPath}");
-            }
-
             if (_folderPath.IndexOfAny(Path.GetInvalidPathChars()) >= 0)
             {
                 throw new ArgumentException("Not valid path");
+            }
+            
+            if (Directory.Exists(_folderPath) == false)
+            {
+                throw new DirectoryNotFoundException($"Folder not found: {_folderPath}");
             }
             
             return _folderPath;
