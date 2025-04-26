@@ -9,7 +9,7 @@ namespace LLarean.IMG2ETC2
         private readonly string _folderPath;
         private readonly bool _includeSubfolders;
 
-        public TextureItems(string folderPath, bool includeSubfolders)
+        public TextureItems(bool includeSubfolders, string folderPath = "")
         {
             _folderPath = folderPath;
             _includeSubfolders = includeSubfolders;
@@ -29,7 +29,6 @@ namespace LLarean.IMG2ETC2
                 if (GetFileExtensionSupportStatus(normalizedPath) == true)
                 {
                     TextureItem textureItem = new TextureItem(normalizedPath);
-                    // ImageModel imageModel = ImageUtils.GetModel(normalizedPath);
                     textureItems.Add(textureItem);
                 }
             }

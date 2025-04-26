@@ -19,7 +19,7 @@ namespace LLarean.IMG2ETC2
         [MenuItem("Tools/IMG2ETC22")]
         private static void ShowWindow()
         {
-            GetWindow<IMG2ETC2Window>("IMG2ETC2");
+            GetWindow<MainWindow>("IMG2ETC2");
         }
 
         private void OnEnable() => _folderPath = Application.dataPath;
@@ -96,7 +96,7 @@ namespace LLarean.IMG2ETC2
 
         private void LoadImages()
         {
-            _textureItems = new TextureItems(_folderPath, _includeSubfolders);
+            _textureItems = new TextureItems(_includeSubfolders, _folderPath);
             _imageModels = _imageLoader.LoadImages(_folderPath, _includeSubfolders);
         }
     }
