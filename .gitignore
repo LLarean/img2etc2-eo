@@ -75,3 +75,5 @@ crashlytics-build.properties
 /img2etc2-eo/Library
 /img2etc2-eo/Logs
 /img2etc2-eo/Temp
+/img2etc2-eo/.idea
+/img2etc2-eo/obj
