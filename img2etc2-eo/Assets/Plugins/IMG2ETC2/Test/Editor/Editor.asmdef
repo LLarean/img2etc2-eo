@@ -1,0 +1,10 @@
+{
+    "name": "Editor",
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "references":[ "GUID:99b34f46b477b9741b53c98727be6497", "GUID:c1a817ce7370f53469d117eb5d89a9f9" ]
+}

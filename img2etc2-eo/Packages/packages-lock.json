@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "com.llarean.img2etc2": {
-      "version": "file:img2etc2",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "com.unity.2d.animation": {
       "version": "10.1.4",
       "depth": 1,
