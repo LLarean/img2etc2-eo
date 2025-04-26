@@ -19,6 +19,9 @@ namespace LLarean.IMG2ETC2
         public List<TextureItem> Content()
         {
             List<TextureItem> textureItems = new List<TextureItem>();
+            
+            if(Directory.Exists(_folderPath) == false) return textureItems;
+            
             SearchOption searchOption = _includeSubfolders ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly;
             string[] filePaths;
             
@@ -28,7 +31,7 @@ namespace LLarean.IMG2ETC2
             }
             catch (Exception e)
             {
-                return textureItems;
+               return textureItems;
             }
 
             foreach (string filePath in filePaths)

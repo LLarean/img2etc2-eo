@@ -28,8 +28,7 @@ namespace LLarean.IMG2ETC2
         {
             DrawFolderSettings();
             DrawActionButtons();
-            var scrollView = new ScrollView(_imageModels);
-            // DrawImageList();
+            new ScrollView(_imageModels).Content();
         }
 
         private void DrawFolderSettings()
@@ -67,22 +66,6 @@ namespace LLarean.IMG2ETC2
                 _imageProcessor.ResizeImages(_imageModels);
             }
         }
-
-        // private void DrawImageList()
-        // {
-        //     if (_imageModels.Count == 0) return;
-        //     
-        //     GUILayout.Space(10);
-        //     GUILayout.Label(GlobalStrings.ImagesIn, EditorStyles.boldLabel);
-        //     _scrollPosition = GUILayout.BeginScrollView(_scrollPosition);
-        //     
-        //     foreach (var model in _imageModels)
-        //     {
-        //         GUIUtils.DrawImageModel(model, _imageModels.IndexOf(model) + 1);
-        //     }
-        //     
-        //     GUILayout.EndScrollView();
-        // }
 
         private void SelectFolder()
         {
