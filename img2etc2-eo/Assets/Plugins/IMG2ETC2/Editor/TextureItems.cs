@@ -1,4 +1,5 @@
 ﻿#if UNITY_EDITOR
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -9,7 +10,7 @@ namespace LLarean.IMG2ETC2
         private readonly string _folderPath;
         private readonly bool _includeSubfolders;
 
-        public TextureItems(bool includeSubfolders, string folderPath = "")
+        public TextureItems(string folderPath, bool includeSubfolders = true)
         {
             _folderPath = folderPath;
             _includeSubfolders = includeSubfolders;
@@ -18,9 +19,17 @@ namespace LLarean.IMG2ETC2
         public List<TextureItem> Content()
         {
             List<TextureItem> textureItems = new List<TextureItem>();
-            
             SearchOption searchOption = _includeSubfolders ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly;
-            string[] filePaths = Directory.GetFiles(_folderPath, "*.*", searchOption);
+            string[] filePaths;
+            
+            try
+            {
+                filePaths = Directory.GetFiles(_folderPath, "*.*", searchOption);
+            }
+            catch (Exception e)
+            {
+                return textureItems;
+            }
 
             foreach (string filePath in filePaths)
             {
