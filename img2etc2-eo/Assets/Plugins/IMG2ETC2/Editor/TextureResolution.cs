@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 
 namespace LLarean.IMG2ETC2
 {
@@ -29,3 +30,4 @@ namespace LLarean.IMG2ETC2
         }
     }
 }
+#endif

@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 147
+  controlID: 39
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -170,7 +170,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 200.66667
     y: 0
-    width: 574
+    width: 568
     height: 813.3333
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
@@ -194,7 +194,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 574
+    width: 568
     height: 763.3333
   m_MinSize: {x: 52, y: 76}
   m_MaxSize: {x: 4002, y: 4026}
@@ -222,7 +222,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 763.3333
-    width: 574
+    width: 568
     height: 50
   m_MinSize: {x: 232, y: 276}
   m_MaxSize: {x: 10002, y: 10026}
@@ -249,14 +249,14 @@ MonoBehaviour:
   - {fileID: 12}
   m_Position:
     serializedVersion: 2
-    x: 774.6667
+    x: 768.6667
     y: 0
-    width: 399.3333
+    width: 405.3333
     height: 813.3333
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 211
+  controlID: 96
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -275,7 +275,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 399.3333
+    width: 405.3333
     height: 78
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
@@ -294,23 +294,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 78
-    width: 399.3333
+    width: 405.3333
     height: 735.3333
-  m_MinSize: {x: 232, y: 276}
-  m_MaxSize: {x: 10002, y: 10026}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 102, y: 126}
+  m_MaxSize: {x: 4002, y: 4026}
+  m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 16}
   - {fileID: 24}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -362,7 +362,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1
     y: 24
-    width: 572
+    width: 566
     height: 737.3333
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_TestListGUIs:
   - m_Window: {fileID: 14}
     runProgress:
-      RunGuid: 096b6c92-9446-429e-bf94-f4dbc5a97503
+      RunGuid: 1737a8a7-6f92-4abe-b9dd-6433980a00cf
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -416,7 +416,7 @@ MonoBehaviour:
         filters:
         - testMode: 1
           testNames:
-          - LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Ctor_PassingNullTexture_
+          - LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests
           groupNames: []
           categoryNames: []
           assemblyNames: []
@@ -431,7 +431,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.9999999
+      Progress: 0.9999998
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
@@ -439,7 +439,7 @@ MonoBehaviour:
       uniqueId: '[img2etc2-eo][suite]'
       name: img2etc2-eo
       fullName: img2etc2-eo
-      resultStatus: 0
+      resultStatus: 1
       duration: 0
       messages: 
       output: 
@@ -451,11 +451,11 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1003
+    - id: 1015
       uniqueId: '[Editor.dll][suite]'
       name: Editor.dll
       fullName: C:/Repositories/img2etc2-eo/img2etc2-eo/Library/ScriptAssemblies/Editor.dll
-      resultStatus: 0
+      resultStatus: 1
       duration: 0
       messages: 
       output: 
@@ -465,13 +465,13 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1000
+      parentId: 1024
       parentUniqueId: '[img2etc2-eo][suite]'
-    - id: 1004
+    - id: 1016
       uniqueId: 'Editor.dll/[LLarean][suite]'
       name: LLarean
       fullName: LLarean
-      resultStatus: 0
+      resultStatus: 1
       duration: 0
       messages: 
       output: 
@@ -481,13 +481,13 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1003
+      parentId: 1015
       parentUniqueId: '[Editor.dll][suite]'
-    - id: 1005
+    - id: 1017
       uniqueId: 'Editor.dll/LLarean/[IMG2ETC2][suite]'
       name: IMG2ETC2
       fullName: LLarean.IMG2ETC2
-      resultStatus: 0
+      resultStatus: 1
       duration: 0
       messages: 
       output: 
@@ -497,13 +497,13 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1004
+      parentId: 1016
       parentUniqueId: 'Editor.dll/[LLarean][suite]'
-    - id: 1006
+    - id: 1018
       uniqueId: 'Editor.dll/LLarean/IMG2ETC2/[Test][suite]'
       name: Test
       fullName: LLarean.IMG2ETC2.Test
-      resultStatus: 0
+      resultStatus: 1
       duration: 0
       messages: 
       output: 
@@ -513,13 +513,13 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1005
+      parentId: 1017
       parentUniqueId: 'Editor.dll/LLarean/[IMG2ETC2][suite]'
-    - id: 1007
+    - id: 1019
       uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/[Editor][suite]'
       name: Editor
       fullName: LLarean.IMG2ETC2.Test.Editor
-      resultStatus: 0
+      resultStatus: 1
       duration: 0
       messages: 
       output: 
@@ -529,13 +529,13 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1006
+      parentId: 1018
       parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/[Test][suite]'
     - id: 1001
       uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests][suite]'
       name: TextureResolutionTests
       fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests
-      resultStatus: 0
+      resultStatus: 1
       duration: 0
       messages: 
       output: 
@@ -545,14 +545,30 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1007
+      parentId: 1019
       parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/[Editor][suite]'
-    - id: 1002
-      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Current_Passing2x2Texture_CurrentIsCorrect]'
-      name: Current_Passing2x2Texture_CurrentIsCorrect
-      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Current_Passing2x2Texture_CurrentIsCorrect
-      resultStatus: 0
+    - id: 1007
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect][suite]'
+      name: CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect
+      resultStatus: 1
       duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests][suite]'
+    - id: 1005
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect(4,4)]'
+      name: CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect(4,4)
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect(4,4)
+      resultStatus: 1
+      duration: 0.0310844
       messages: 
       output: 
       stacktrace: 
@@ -562,20 +578,197 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
+      parentId: 1007
+      parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect][suite]'
+    - id: 1006
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect(8,8)]'
+      name: CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect(8,8)
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect(8,8)
+      resultStatus: 1
+      duration: 0.0004525
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersMultiples4_ResolutionStatusIsCorrect][suite]'
+    - id: 1010
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong][suite]'
+      name: CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
       parentId: 1001
       parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests][suite]'
-    m_ResultText: "Ctor_PassingNullTexture_ (0,033s)\n---\n  Expected: <System.ArgumentNullException>\r\n 
-      But was:  null\r\n\n---\nat LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Ctor_PassingNullTexture_
-      () [0x00001] in <color=#40a0ff><a href=\".\\Packages\\img2etc2\\Test\\Editor\\TextureResolutionTests.cs\"
-      line=\"13\r\">Packages\\img2etc2\\Test\\Editor\\TextureResolutionTests.cs:13\r</a></color>"
-    m_ResultStacktrace: 'at LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Ctor_PassingNullTexture_
-      () [0x00001] in .\Packages\img2etc2\Test\Editor\TextureResolutionTests.cs:13
-
-'
+    - id: 1008
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong(4,4)]'
+      name: CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong(4,4)
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong(4,4)
+      resultStatus: 1
+      duration: 0.0008669
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong][suite]'
+    - id: 1009
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong(8,8)]'
+      name: CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong(8,8)
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong(8,8)
+      resultStatus: 1
+      duration: 0.0003023
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong][suite]'
+    - id: 1004
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Current_PassingTexture_ResolutionAreEqualPassedTexture][suite]'
+      name: Current_PassingTexture_ResolutionAreEqualPassedTexture
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Current_PassingTexture_ResolutionAreEqualPassedTexture
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests][suite]'
+    - id: 1002
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/Current_PassingTexture_ResolutionAreEqualPassedTexture/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Current_PassingTexture_ResolutionAreEqualPassedTexture(2,2)]'
+      name: Current_PassingTexture_ResolutionAreEqualPassedTexture(2,2)
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Current_PassingTexture_ResolutionAreEqualPassedTexture(2,2)
+      resultStatus: 1
+      duration: 0.001015
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Current_PassingTexture_ResolutionAreEqualPassedTexture][suite]'
+    - id: 1003
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/Current_PassingTexture_ResolutionAreEqualPassedTexture/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Current_PassingTexture_ResolutionAreEqualPassedTexture(5,5)]'
+      name: Current_PassingTexture_ResolutionAreEqualPassedTexture(5,5)
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Current_PassingTexture_ResolutionAreEqualPassedTexture(5,5)
+      resultStatus: 1
+      duration: 0.0002946
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Current_PassingTexture_ResolutionAreEqualPassedTexture][suite]'
+    - id: 1014
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Previous_SizeTextureChange_PreviousAreNotEqualCurrent][suite]'
+      name: Previous_SizeTextureChange_PreviousAreNotEqualCurrent
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Previous_SizeTextureChange_PreviousAreNotEqualCurrent
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests][suite]'
+    - id: 1013
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/Previous_SizeTextureChange_PreviousAreNotEqualCurrent/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Previous_SizeTextureChange_PreviousAreNotEqualCurrent(2,2)]'
+      name: Previous_SizeTextureChange_PreviousAreNotEqualCurrent(2,2)
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Previous_SizeTextureChange_PreviousAreNotEqualCurrent(2,2)
+      resultStatus: 1
+      duration: 0.00449
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Previous_SizeTextureChange_PreviousAreNotEqualCurrent][suite]'
+    - id: 1012
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Previous_SizeTextureNotChange_PreviousAreEqualCurrent][suite]'
+      name: Previous_SizeTextureNotChange_PreviousAreEqualCurrent
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Previous_SizeTextureNotChange_PreviousAreEqualCurrent
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests][suite]'
+    - id: 1011
+      uniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/Previous_SizeTextureNotChange_PreviousAreEqualCurrent/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Previous_SizeTextureNotChange_PreviousAreEqualCurrent(2,2)]'
+      name: Previous_SizeTextureNotChange_PreviousAreEqualCurrent(2,2)
+      fullName: LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Previous_SizeTextureNotChange_PreviousAreEqualCurrent(2,2)
+      resultStatus: 1
+      duration: 0.0008492
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: 'Editor.dll/LLarean/IMG2ETC2/Test/Editor/TextureResolutionTests/[Editor][LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Previous_SizeTextureNotChange_PreviousAreEqualCurrent][suite]'
+    m_ResultText: TextureResolutionTests (8 tests) (0,000s)
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: bb7f1bdb
-      m_LastClickedID: -618954821
+      m_SelectedIDs: 71c4eb54
+      m_LastClickedID: 1424737393
       m_ExpandedIDs: 6d3dca87315159f2265546fa485c260e176f33449046c24671c4eb54ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -606,7 +799,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 14}
     runProgress:
-      RunGuid: 096b6c92-9446-429e-bf94-f4dbc5a97503
+      RunGuid: 1737a8a7-6f92-4abe-b9dd-6433980a00cf
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -619,7 +812,7 @@ MonoBehaviour:
         filters:
         - testMode: 1
           testNames:
-          - LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Ctor_PassingNullTexture_
+          - LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests
           groupNames: []
           categoryNames: []
           assemblyNames: []
@@ -634,7 +827,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.9999999
+      Progress: 0.9999998
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
@@ -920,7 +1113,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 0}
     runProgress:
-      RunGuid: 096b6c92-9446-429e-bf94-f4dbc5a97503
+      RunGuid: 1737a8a7-6f92-4abe-b9dd-6433980a00cf
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -933,7 +1126,7 @@ MonoBehaviour:
         filters:
         - testMode: 1
           testNames:
-          - LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests.Ctor_PassingNullTexture_
+          - LLarean.IMG2ETC2.Test.Editor.TextureResolutionTests
           groupNames: []
           categoryNames: []
           assemblyNames: []
@@ -948,7 +1141,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.9999999
+      Progress: 0.9999998
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList: []
@@ -1042,8 +1235,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1
-    y: 102
+    x: 774.6667
+    y: 156.66667
     width: 397.3333
     height: 709.3333
   m_SerializedDataModeController:
@@ -1068,7 +1261,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Packages/com.llarean.img2etc2/Test/Editor
+    - Assets/Plugins/IMG2ETC2/Test/Editor
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1086,7 +1279,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 10060000
     m_LastClickedID: 1552
-    m_ExpandedIDs: 000000007eae000080ae000082ae000084ae000086ae000088ae00008aae00008cae00008eae000090ae000092ae0000
+    m_ExpandedIDs: 000000007eae000080ae000082ae000084ae000086ae000088ae00008aae00008cae00008eae000090ae000092ae000094ae000096ae000098ae00009aae00009cae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1112,10 +1305,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 788.49976}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007eae000080ae000082ae000084ae000086ae000088ae00008aae00008cae00008eae000090ae000092ae0000
+    m_ExpandedIDs: 000000007eae000080ae000082ae000084ae000086ae000088ae00008aae00008cae00008eae000090ae000092ae000094ae000096ae000098ae00009aae00009cae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2105,7 +2298,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1
     y: 787.3333
-    width: 572
+    width: 566
     height: 24
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -2128,8 +2321,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Packages/com.llarean.img2etc2/Test/Editor
+    m_Folders: []
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -2147,7 +2339,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 80890000
     m_LastClickedID: 35200
-    m_ExpandedIDs: 000000007eae000080ae000082ae000084ae000086ae000088ae00008aae00008cae00008eae000090ae000092ae0000
+    m_ExpandedIDs: 000000007eae000080ae000082ae000084ae000086ae000088ae00008aae00008cae00008eae000090ae000092ae000094ae000096ae000098ae00009aae00009cae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2176,7 +2368,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007eae000080ae000082ae000084ae000086ae000088ae00008aae00008cae00008eae000090ae000092ae0000
+    m_ExpandedIDs: 000000007eae000080ae000082ae000084ae000086ae000088ae00008aae00008cae00008eae000090ae000092ae000094ae000096ae000098ae00009aae00009cae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2329,7 +2521,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1
     y: 24
-    width: 397.3333
+    width: 403.3333
     height: 52
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -2347,7 +2539,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4cf6ffff06fbffff
+      m_ExpandedIDs: c8d5ffff34d8ffffa0daffff0cddffffa4dffffff8e1ffff50e4ffffd8efffff66f5ffffb2f7ffff00fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2393,9 +2585,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 774.6667
-    y: 156.66667
-    width: 397.3333
+    x: 1
+    y: 102
+    width: 403.3333
     height: 709.3333
   m_SerializedDataModeController:
     m_DataMode: 0

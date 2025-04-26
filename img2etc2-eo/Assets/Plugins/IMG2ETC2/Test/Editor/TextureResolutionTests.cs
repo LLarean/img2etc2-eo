@@ -28,14 +28,14 @@ namespace LLarean.IMG2ETC2.Test.Editor
         }
 
         [Test]
-        [TestCase(4, 4)]
-        [TestCase(8, 8)]
+        [TestCase(5, 5)]
+        [TestCase(9, 9)]
         public void CrunchStatus_PassNumbersNotMultiples4_ResolutionStatusIsWrong(int width, int height)
         {
             var texture2D = new Texture2D(width, height);
             var textureResolution = new TextureResolution(texture2D);
             
-            Assert.AreEqual(textureResolution.CrunchStatus(), ResolutionStatus.Correct);
+            Assert.AreEqual(textureResolution.CrunchStatus(), ResolutionStatus.Wrong);
         }
         
         [Test]
