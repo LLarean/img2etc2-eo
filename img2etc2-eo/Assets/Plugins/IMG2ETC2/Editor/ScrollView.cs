@@ -13,7 +13,7 @@ namespace LLarean.IMG2ETC2
 
         public ScrollView(List<ImageModel> imageModels)
         {
-            _imageModels = imageModels;
+            _imageModels = imageModels ?? new List<ImageModel>();
         }
         
         public void Content()
