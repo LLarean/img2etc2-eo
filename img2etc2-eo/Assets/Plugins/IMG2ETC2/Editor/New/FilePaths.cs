@@ -18,26 +18,6 @@ namespace LLarean.IMG2ETC2
         
         public string[] Content()
         {
-            if (string.IsNullOrWhiteSpace(_folderPath))
-            {
-                throw new ArgumentNullException(nameof(_folderPath));
-            }
-
-            if (Directory.Exists(_folderPath) == false)
-            {
-                throw new DirectoryNotFoundException($"Folder not found: {_folderPath}");
-            }
-
-            if (_folderPath.IndexOfAny(Path.GetInvalidPathChars()) >= 0)
-            {
-                throw new ArgumentException("Not valid path");
-            }
-
-            if (Enum.IsDefined(typeof(SearchOption), _searchOption) == false)
-            {
-                throw new ArgumentOutOfRangeException(nameof(_searchOption));
-            }
-
             try
             {
                 return Directory.GetFiles(_folderPath, "*.*", _searchOption);
