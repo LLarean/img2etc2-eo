@@ -13,10 +13,10 @@ namespace LLarean.IMG2ETC2
         private List<ImageModel> _imageModels = new();
         
         private FolderPath _folderPath  = new(Application.dataPath);
+        private TextureItems _textureItems;
         
         private bool _includeSubfolders = true;
         private Vector2 _scrollPosition;
-        private TextureItems _textureItems;
 
         [MenuItem("Tools/IMG2ETC22")]
         private static void ShowWindow()
@@ -33,7 +33,7 @@ namespace LLarean.IMG2ETC2
         {
             DrawFolderSettings();
             DrawActionButtons();
-            new ScrollView(_imageModels).Content();
+            LoadImages();
         }
 
         private void DrawFolderSettings()
@@ -86,7 +86,9 @@ namespace LLarean.IMG2ETC2
         private void LoadImages()
         {
             _textureItems = new TextureItems(_folderPath.Value(), _includeSubfolders);
-            _imageModels = _imageLoader.LoadImages(_folderPath.Value(), _includeSubfolders);
+            new ScrollView(_textureItems).Content();
+
+            // _imageModels = _imageLoader.LoadImages(_folderPath.Value(), _includeSubfolders);
         }
     }
 }
