@@ -12,7 +12,7 @@ namespace LLarean.IMG2ETC2
         
         private List<ImageModel> _imageModels = new();
         
-        private FolderPath _folderPath  = new(Application.dataPath);
+        private FolderPath _folderPath;
         private TextureItems _textureItems;
         
         private bool _includeSubfolders = true;
@@ -52,7 +52,7 @@ namespace LLarean.IMG2ETC2
             {
                 SelectFolder();
             }
-
+        
             if (Event.current.keyCode == KeyCode.Return)
             {
                 var folderPath = EditorGUILayout.TextField(GlobalStrings.FolderPath, _folderPath.Value());
@@ -87,7 +87,7 @@ namespace LLarean.IMG2ETC2
         {
             _textureItems = new TextureItems(_folderPath.Value(), _includeSubfolders);
             new ScrollView(_textureItems).Content();
-
+        
             // _imageModels = _imageLoader.LoadImages(_folderPath.Value(), _includeSubfolders);
         }
     }

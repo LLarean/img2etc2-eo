@@ -15,7 +15,7 @@ namespace LLarean.IMG2ETC2
 
         public string Value()
         {
-            if (string.IsNullOrWhiteSpace(_value))
+            if (string.IsNullOrWhiteSpace(_value) == true)
             {
                 throw new ArgumentNullException(nameof(_value));
             }
