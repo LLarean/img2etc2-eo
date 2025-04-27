@@ -1,40 +1,22 @@
 ﻿#if UNITY_EDITOR
-using System;
 using System.Collections.Generic;
-using System.IO;
 
 namespace LLarean.IMG2ETC2
 {
     public record TextureItems
     {
-        private readonly string _folderPath;
-        private readonly bool _includeSubfolders;
+        private readonly FilePaths _filePaths;
 
-        public TextureItems(string folderPath, bool includeSubfolders = true)
+        public TextureItems(FilePaths filePaths)
         {
-            _folderPath = folderPath;
-            _includeSubfolders = includeSubfolders;
+            _filePaths = filePaths;
         }
 
         public List<TextureItem> Content()
         {
             List<TextureItem> textureItems = new List<TextureItem>();
-            
-            if(Directory.Exists(_folderPath) == false) return textureItems;
-            
-            SearchOption searchOption = _includeSubfolders ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly;
-            string[] filePaths;
-            
-            try
-            {
-                filePaths = Directory.GetFiles(_folderPath, "*.*", searchOption);
-            }
-            catch (Exception e)
-            {
-               return textureItems;
-            }
 
-            foreach (string filePath in filePaths)
+            foreach (string filePath in _filePaths.Content())
             {
                 string normalizedPath = filePath.Replace("\\", "/");
                 

@@ -85,7 +85,8 @@ namespace LLarean.IMG2ETC2
 
         private void LoadImages()
         {
-            _textureItems = new TextureItems(_folderPath.Value(), _includeSubfolders);
+            _textureItems = new TextureItems(new FilePaths(_folderPath.Value()));
+            
             new ScrollView(_textureItems).Content();
         
             // _imageModels = _imageLoader.LoadImages(_folderPath.Value(), _includeSubfolders);
