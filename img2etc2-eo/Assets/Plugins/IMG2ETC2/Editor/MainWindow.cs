@@ -11,7 +11,9 @@ namespace LLarean.IMG2ETC2
         private readonly ImageProcessor _imageProcessor = new();
         
         private List<ImageModel> _imageModels = new();
-        private string _folderPath = string.Empty;
+        
+        private FolderPath _folderPath  = new(Application.dataPath);
+        
         private bool _includeSubfolders = true;
         private Vector2 _scrollPosition;
         private TextureItems _textureItems;
@@ -22,7 +24,10 @@ namespace LLarean.IMG2ETC2
             GetWindow<MainWindow>("IMG2ETC2");
         }
 
-        private void OnEnable() => _folderPath = Application.dataPath;
+        private void OnEnable()
+        {
+            _folderPath = new FolderPath(Application.dataPath);
+        }
 
         private void OnGUI()
         {
@@ -33,7 +38,7 @@ namespace LLarean.IMG2ETC2
 
         private void DrawFolderSettings()
         {
-            _folderPath = EditorGUILayout.TextField(GlobalStrings.FolderPath, _folderPath);
+            EditorGUILayout.TextField(GlobalStrings.FolderPath, _folderPath.Value());
             
             EditorGUI.BeginChangeCheck();
             _includeSubfolders = EditorGUILayout.Toggle(GlobalStrings.IncludeSubfolders, _includeSubfolders);
@@ -50,8 +55,8 @@ namespace LLarean.IMG2ETC2
 
             if (Event.current.keyCode == KeyCode.Return)
             {
-                _folderPath = EditorGUILayout.TextField(GlobalStrings.FolderPath, _folderPath);
-                LoadImages();
+                var folderPath = EditorGUILayout.TextField(GlobalStrings.FolderPath, _folderPath.Value());
+                _folderPath = new FolderPath(folderPath);
             }
         }
 
@@ -69,19 +74,19 @@ namespace LLarean.IMG2ETC2
 
         private void SelectFolder()
         {
-            var path = EditorUtility.OpenFolderPanel(GlobalStrings.SelectFolder, _folderPath, "");
+            var folderPath = EditorUtility.OpenFolderPanel(GlobalStrings.SelectFolder, _folderPath.Value(), "");
             
-            if (string.IsNullOrEmpty(path) == false)
+            if (string.IsNullOrEmpty(folderPath) == false)
             {
-                _folderPath = path;
+                _folderPath = new FolderPath(folderPath);
                 LoadImages();
             }
         }
 
         private void LoadImages()
         {
-            _textureItems = new TextureItems(_folderPath, _includeSubfolders);
-            _imageModels = _imageLoader.LoadImages(_folderPath, _includeSubfolders);
+            _textureItems = new TextureItems(_folderPath.Value(), _includeSubfolders);
+            _imageModels = _imageLoader.LoadImages(_folderPath.Value(), _includeSubfolders);
         }
     }
 }
