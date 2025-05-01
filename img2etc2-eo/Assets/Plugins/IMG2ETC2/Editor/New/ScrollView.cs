@@ -18,7 +18,7 @@ namespace LLarean.IMG2ETC2
         public void Content()
         {
             GUILayout.Space(10);
-            GUILayout.Label(GlobalStrings.ImagesIn, EditorStyles.boldLabel);
+            // GUILayout.Label(GlobalStrings.ImagesIn, EditorStyles.boldLabel);
             _scrollPosition = GUILayout.BeginScrollView(_scrollPosition);
             
             foreach (var model in _textureItems.Content())

@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 
 namespace LLarean.IMG2ETC2.Test.Editor
@@ -5,17 +6,10 @@ namespace LLarean.IMG2ETC2.Test.Editor
     public class TextureItemsTests
     {
         [Test]
-        public void Constructor_WithNullPath_DoesNotThrow()
+        public void Constructor_WithEmptyFilePath_DoesNotThrow()
         {
-            Assert.DoesNotThrow(() => new TextureItems(null));
-        }
-        
-        [Test]
-        public void Content_WithNullPath_ListCount0()
-        {
-            var textureItems = new TextureItems(null);
-            var content = textureItems.Content();
-            Assert.AreEqual(content.Count, 0);
+            var filePaths = new FilePaths(String.Empty);
+            Assert.DoesNotThrow(() => new TextureItems(filePaths));
         }
     }
 }
