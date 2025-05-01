@@ -20,12 +20,5 @@ namespace LLarean.IMG2ETC2
             GUILayout.EndScrollView();
         }
     }
-    
-    public record TextureScrollViewTest : IScrollView
-    {
-        public void Begin() { }
-
-        public void End() { }
-    }
 }
 #endif

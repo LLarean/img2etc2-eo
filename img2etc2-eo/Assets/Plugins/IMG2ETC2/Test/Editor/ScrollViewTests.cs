@@ -19,4 +19,11 @@ namespace LLarean.IMG2ETC2.Test.Editor
             Assert.DoesNotThrow(() => new ScrollView(new TextureScrollViewTest(), textureItems).Content());
         }
     }
+    
+    public record TextureScrollViewTest : IScrollView
+    {
+        public void Begin() { }
+
+        public void End() { }
+    }
 }

@@ -13,6 +13,8 @@ namespace LLarean.IMG2ETC2
             _filePath = filePath;
         }
 
+        public string FilePath => _filePath;
+
         public Texture2D Content()
         {
             var texture = new Texture2D(2, 2);
