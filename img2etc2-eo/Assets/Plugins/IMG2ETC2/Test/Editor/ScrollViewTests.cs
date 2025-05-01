@@ -9,7 +9,14 @@ namespace LLarean.IMG2ETC2.Test.Editor
         public void Constructor_EmptyTextureItems_DoesNotThrow()
         {
             var textureItems = new TextureItems(new FilePaths(String.Empty));
-            Assert.DoesNotThrow(() => new ScrollView(textureItems));
+            Assert.DoesNotThrow(() => new ScrollView(new TextureScrollViewTest(), textureItems));
+        }
+        
+        [Test]
+        public void Content_EmptyTextureItems_DoesNotThrow()
+        {
+            var textureItems = new TextureItems(new FilePaths(String.Empty));
+            Assert.DoesNotThrow(() => new ScrollView(new TextureScrollViewTest(), textureItems).Content());
         }
     }
 }
