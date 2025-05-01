@@ -22,24 +22,45 @@ namespace LLarean.IMG2ETC2
             
             foreach (var model in _textureItems.Content())
             {
-                DrawImageModel(model, _textureItems.Content().IndexOf(model) + 1);
-                // GUIUtils.DrawImageModel(model, _textureItems.Content().IndexOf(model) + 1);
+                var itemInfo = GetItemInfo(model, _textureItems.Content().IndexOf(model) + 1);
+                _scrollView.DrawItem(itemInfo);
             }
             
             _scrollView.End();
         }
         
-        public static void DrawImageModel(TextureItem textureItem, int imageNumber)
+        private string GetItemInfo(TextureItem textureItem, int imageNumber)
         {
             var texture2D = textureItem.Content();
             var textureResolution = new TextureResolution(texture2D);
-            // string color = GetStatusColor(imageModel.ResolutionStatus);
-            // string resolutionText = GetResolutionText(imageModel.CurrentResolution, imageModel.PreviousResolution);
+            
+            string color = GetStatusColor(textureResolution.CrunchStatus());
+            string resolutionText = GetResolutionText(textureResolution.Current(), textureResolution.Previous());
 
-            GUILayout.Label(
-                $"{textureResolution.CrunchStatus()} {imageNumber} - {textureItem.FilePath} {textureResolution.Current()}",
-                new GUIStyle { richText = true }
-            );
+            return $"<color={color}>{textureResolution.CrunchStatus()}</color> {imageNumber} - {textureItem.FilePath} {resolutionText}";
+        }
+        
+        private string GetStatusColor(ResolutionStatus resolutionStatus)
+        {
+            return resolutionStatus switch
+            {
+                ResolutionStatus.Correct => "green",
+                ResolutionStatus.Wrong => "yellow",
+                _ => "white"
+            };
+        }
+        
+        private string GetResolutionText(string currentResolution, string previousResolution)
+        {
+            string resolutionText = $"Resolution: {currentResolution}";
+
+            if (previousResolution == string.Empty)
+            {
+                resolutionText = $"{resolutionText} => {currentResolution}";
+            }
+
+            resolutionText = $"<color=white>{resolutionText}</color>";
+            return resolutionText;
         }
         
         

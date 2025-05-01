@@ -23,7 +23,7 @@ namespace LLarean.IMG2ETC2.Test.Editor
     public record TextureScrollViewTest : IScrollView
     {
         public void Begin() { }
-
+        public void DrawItem(string itemInfo) { }
         public void End() { }
     }
 }

@@ -15,6 +15,11 @@ namespace LLarean.IMG2ETC2
             _scrollPosition = GUILayout.BeginScrollView(_scrollPosition);
         }
 
+        public void DrawItem(string itemInfo)
+        {
+            GUILayout.Label(itemInfo, new GUIStyle { richText = true });
+        }
+
         public void End()
         {
             GUILayout.EndScrollView();
