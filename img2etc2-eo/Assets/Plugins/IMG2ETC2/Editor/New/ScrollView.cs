@@ -35,22 +35,9 @@ namespace LLarean.IMG2ETC2
             var textureResolution = new TextureResolution(texture2D);
 
             string statusColor = new StatusColor(textureResolution.CrunchStatus()).Value();
-            string resolutionText = GetResolutionText(textureResolution.Current(), textureResolution.Previous());
+            string resolutionText = new ResolutionInfo(textureResolution.Current(), textureResolution.Previous()).Value();
 
             return $"<color={statusColor}>{textureResolution.CrunchStatus()}</color> {imageNumber} - {textureItem.FilePath} {resolutionText}";
-        }
-        
-        private string GetResolutionText(string currentResolution, string previousResolution)
-        {
-            string resolutionText = $"Resolution: {currentResolution}";
-
-            if (previousResolution == string.Empty)
-            {
-                resolutionText = $"{resolutionText} => {currentResolution}";
-            }
-
-            resolutionText = $"<color=white>{resolutionText}</color>";
-            return resolutionText;
         }
     }
 }

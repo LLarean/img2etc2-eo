@@ -1,5 +1,4 @@
 using NUnit.Framework;
-using UnityEngine;
 
 namespace LLarean.IMG2ETC2.Test.Editor
 {
